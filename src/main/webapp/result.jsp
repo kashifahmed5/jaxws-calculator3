@@ -7,7 +7,7 @@
 <meta charset="ISO-8859-1">
 <title>Calculator Result</title>
 </head>
-<% int value1 = 0; int value2 = 0; int sum = 0; int sub = 0;
+<% int value1 = 0; int value2 = 0; int sum = 0; 
 
 try { System.out.println( request.getParameter( "value1" ) + " " + request.getParameter( "value2" ) );
 value1 = Integer.parseInt( request.getParameter( "value1" ) );
@@ -24,8 +24,6 @@ sub =value1-value2;
 } catch ( Exception e ) { e.printStackTrace();
 } %>
 
- <body> The result is: <%=value1%>+<%=value2%>=<%=sum%>
- 						<br><%=value1%>+<%=value2%>=<%=sub%>
- <br> <a href="index.jsp">Back</a> </body>
+ <body> The result is: <%=value1%>+<%=value2%>=<%=sum%> <br> <a href="index.jsp">Back</a> </body>
  
   </html>
